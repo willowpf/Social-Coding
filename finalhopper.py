@@ -97,6 +97,16 @@ while True:
             min = int(time_ms / 1000 / 60 % 60)
             hr = int(time_ms / 1000 / 60 / 60)
 
+            emission_factors = {
+                "car": 120,  # grams CO2 per km
+                "bike": 0,
+                "foot": 0
+            }
+
+            co2_emission_g = km * emission_factors.get(vehicle, 0)
+            co2_emission_kg = co2_emission_g / 1000
+
+            print(f"Estimated CO₂ Emissions: {co2_emission_g:.0f} grams ({co2_emission_kg:.2f} kg)")
             print(f"Distance Traveled: {distance_m:.2f} m")
             print(f"Trip Duration: {time_ms} millisec")
             print(f"Trip Duration: {hr:02d}:{min:02d}:{sec:02d}")
