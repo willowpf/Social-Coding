@@ -59,7 +59,7 @@ def main():
 
     api_data = api_request()
     if api_data is not None:
-        print(f"API data: {api_data}")
+        print(f"API dataa: {api_data}")
     
 if __name__ == "__main__":
     main()
