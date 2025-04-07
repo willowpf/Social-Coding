@@ -4,7 +4,7 @@ import urllib.parse
 
 geocode_url = "https://graphhopper.com/api/1/geocode?"
 route_url = "https://graphhopper.com/api/1/route?"
-key = ""
+key = "73092131-844f-47b8-a8ba-5e8a91ecdc61"
 #Senagan
 def geocoding(location, key):
     while location == "":
