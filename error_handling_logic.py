@@ -40,7 +40,7 @@ def api_request():
             raise Exception("API request failed")
         return response["data"]
     except Exception as e:
-        # Handle general errors
+        
         print(f"Error: {e}")
         return None
 
