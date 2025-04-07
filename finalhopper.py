@@ -1,10 +1,11 @@
+
 import requests
 import urllib.parse
 
 geocode_url = "https://graphhopper.com/api/1/geocode?"
 route_url = "https://graphhopper.com/api/1/route?"
 key = ""
-
+#Senagan
 def geocoding(location, key):
     while location == "":
         location = input("Enter the location again: ")
