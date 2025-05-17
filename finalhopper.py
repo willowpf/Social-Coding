@@ -42,7 +42,7 @@ def geocoding(location, key):
             return json_status, None, None, None
     else:
         return json_status, None, None, None
-
+#input validation
 while True:
     print("\n+++++++++++++++++++++++++++++++++++++++++++++")
     print("Vehicle profiles available on Graphhopper:")
